@@ -21,15 +21,17 @@ export default class Splash extends Scene {
   }
 
   get finish() {
-    return new Promise((res)=>setTimeout(res, this.config.hideDelay));
+    return new Promise((res) => setTimeout(res, this.config.hideDelay));
   }
 
   preload() {
     const images = {
       logo: Assets.images.logo,
+      smallFish: Assets.images.small,
+      bigFish: Assets.images.big,
     };
     const sounds = {
-      
+
     };
 
     return super.preload({ images, sounds });
